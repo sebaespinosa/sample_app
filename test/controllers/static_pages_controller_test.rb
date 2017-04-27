@@ -30,4 +30,9 @@ end
   	assert_select "title", "Contact | #{@base_title}"
   end
 
+    test "should get root" do
+    get root_url
+    assert_response :success
+  end
+
 end
